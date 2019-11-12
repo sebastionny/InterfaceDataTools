@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,400i,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,400i,600i,700i,600,700&display=swap');
 
 /* General  */
+
+body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 400)));
+  }
 
 .fontParrafo{
     font-family: 'Fira Sans', sans-serif;
@@ -13,19 +17,19 @@
 .fontTitulo{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2em;
     letter-spacing: -0.05ch;
 }
 
 .fontSubtitulo{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    font-size: 1em;
-    letter-spacing: 1ch;
+    font-size: 0.9em;
+    letter-spacing: 0.8ch;
 }
 .fontEx1{
     padding-left: 110px;
-    font-size: 3.5em;
+    font-size: 2.3em;
     font-weight: 600;
     padding-right: 30px;
     margin-bottom: 30px;
@@ -179,10 +183,86 @@ background-blend-mode: multiply;
     padding-top: 40px;
 }
 
+.card-body {
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    border-radius: 20px;
+}
+.ombre {
+    z-index: 0;
+    position: absolute;
+}
+
+.card-img-top {
+    border-radius: 20px;
+}
+
+.card {
+    background-color: #ffffff00;
+    border: 1px solid rgba(0,0,0,0);
+    margin-bottom: 20px;
+}
+
+.card-body a {
+    transition: all 0.2s ease-in;
+}
+.card-body a:hover {
+    margin-left: 10px;
+}
+.card-body a:hover {
+    margin-right: -15px;
+}
 
 
 
 
+ 
+.cell {
+    width: 100%;
+    height: 420px;
+    margin-right: 10px;
+    counter-increment: cell;
+    text-align: center;
+}
+
+.cell .profil{
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+  .testimons .fontParrafo {
+    text-align: center;
+    line-height: 1.5;
+}
+.cell h4 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+  
+.cell .puesto {
+    background: #52e3c2;
+    border-radius: 20px;
+    padding: 5px;
+    color: #fff;
+}
+
+.flickity-page-dots .dot {
+    background: #52e3c2;
+}
+
+.call h3 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 23px;
+    letter-spacing: 0.2px;
+    color: #52e3c2;
+    position: absolute;
+    width: 160px;
+    left: 140px;
+    margin-top: 30px;
+}
 
 
 
@@ -258,3 +338,7 @@ footer ul li{
 .icons{
     margin-top: 20px;
 }
+
+
+
+

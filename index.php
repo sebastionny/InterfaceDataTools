@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/icofont.min.css">
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
     <link rel="stylesheet" href="./css/style.css">
     <title>DataTools, Solucionamos problemas de movilidad</title>
 
@@ -128,24 +129,62 @@
     <div class="container">
         <div class="row pt-5">
             <div class="col-sm-9">
-                <h2 class="fontTitulo colorV3">Noticias</h2>
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
+                <h2 class="fontTitulo colorV3 mb-3">Noticias</h2>
+                <div class="row mt-5">
 
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                <?php for ($i=0; $i < 4; $i++) { ?>
+
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card fontParrafo colorB" >
+                            
                             <div class="card-body">
                                 <h3>Help Finding Information Online</h3>
                                 <p class="card-text">Developed by the Intel Corporation, HDCP stands for high-bandwidth digital content protection. As the descriptive name implies, HDCP is all about protecting…</p>
+                                <a href="#" class="float-right"><img src="./img/btnLink.png" alt="Ir a la noticia"></a>
                             </div>
-                            <a href=""><img src="" alt=""></a>
+                            <img src="./img/noti/ombre.png" class="card-img-top ombre" alt="Image Fonde">
+                            <img src="./img/noti/arti-<?=$i?>.jpg" class="card-img-top" alt="Image Fonde">
+                        
                         </div>
-
                     </div>
+
+                    <?php } ?>
+                
                 </div>
             </div>
             <div class="col-sm-3">
-                <h2 class="fontTitulo colorV3">Testimonios</h2>
+                <h2 class="fontTitulo colorV3 mb-3">Testimonios</h2>
+
+                <div class="testimons mb-5">
+                    <?php for ($i=0; $i < 3; $i++) { ?>
+                    <div class="cell fontParrafo">
+                            <img src="./img/company.png" class="img-fluid" alt="Nombre compania">
+                            <h3 class="fontParrafo mt-5 mb-5">
+                                Leadspace is really pushing the envelope regarding advanced predictive scoring
+                                and real time enrichment.
+                            </h3>
+
+                            <img class="profil" src="./img/test.jpg" alt="Nombre persona">
+                            <h4 class="colorV3">Charles Eichenbaum</h4>
+                            <h4 class="puesto ">Director of Marketing TI</h4>
+                    </div>
+                    <?php } ?>
+                   
+                </div>
+                    
+
+
+
+
+                  <div class="call mt-5"> 
+                        <a href="#">
+                            <h3 class="fontParrafo" > Me interesa, quiero solicitar un DEMO</h3>
+                            <img src="./img/callToAction.png" alt="LLamada a la action">
+                        </a>
+                    </div>
+
+
             </div>
         </div>
     </div>
@@ -164,7 +203,7 @@
         <div class="row">
             <div class="col-7">
                 <h5 class="colorV1">Llámenos</h5>
-                <h2>+1 438 828 4554</h2>
+                <h2>(325) 456 3456</h2>
                 <a class="linkA" href="mailto:info@datatools.com">info@datatools.com</a>
             </div>
             <div class="col-5 font-weight-bolder">
@@ -200,4 +239,19 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/flickity.pkgd.min.js"></script>
+
+
+<script>
+    var flkty = new Flickity( '.testimons', {
+
+    cellAlign: 'center',
+    prevNextButtons: false,
+    draggable: true,
+    autoPlay: 3500,
+    contain: true
+
+});
+</script>
+
 </html>
