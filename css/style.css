@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,400i,600,700&display=swap');
+
+/* General  */
+
+.fontParrafo{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    color: #4A4A4A;
+    font-size: 16px;
+    letter-spacing: -0.05ch;
+}
+
+.fontTitulo{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: -0.05ch;
+}
+
+.fontSubtitulo{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1ch;
+}
+.fontEx1{
+    padding-left: 110px;
+    font-size: 3.5em;
+    font-weight: 600;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.fontEx2{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.fontEx1::before {
+    content: " ";
+    background: url(../img/comillas.png) no-repeat;
+    padding: 23px 40px;
+    margin-left: -90px;
+  }
+
+  .fontEx1::after {
+    content: " ";
+    background: url(../img/comillas2.png) no-repeat;
+    padding: 13px 40px;
+    margin-left: 10px;
+  }
+
+.colorB{color: #fff;}
+.colorV1{color: #50E3C2;}
+.colorV2{ color: #005068;}
+.colorV3{ color: #0082A8;}
+
+.txtR{text-align: right;}
+
+a{
+    color: #4A4A4A;
+}
+
+a:hover{
+    color: #42AB88;
+    text-decoration: none;
+}
+
+.linkA {
+    color: #fff;
+    border-bottom: 2px solid #50E3C2;
+    font-size: 1.2em;
+}
+
+.container-fluid{
+    padding: 0px!important;
+}
+
+.carousel-caption {
+    bottom: 80px;
+}
+.carousel {
+    position: relative;
+    top: -90px;
+    z-index: -1;
+}
+
+.controlBtn {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    bottom: -80px;
+}
+
+
+
+.clip-mask {
+-webkit-clip-path: polygon(18% 32%, 100% 30%, 88% 70%, 0% 72%);
+clip-path: polygon(18% 32%, 100% 30%, 88% 70%, 3% 72%);
+background-color: rgba(80, 227, 195, 0.459);
+background-blend-mode: multiply;
+}
+
+.clip-mask2 {
+    -webkit-clip-path: polygon(0% 32%, 85% 30%, 100% 70%, 15% 72%);
+    clip-path: polygon(0% 32%, 85% 30%, 100% 70%, 15% 72%);
+    background-color: rgba(80, 227, 195, 0.459);
+    background-blend-mode: multiply;
+    }
+
+[data-thmb="next"] {
+    padding: 80px 90px;
+    background-image: url(../img/thumb.png); 
+}
+
+[data-thmb="prev"] {
+    padding: 80px 90px;
+    background-image: url(../img/thumb2.png); 
+}
+
+.clip-mask span, .clip-mask2 span{
+    color: #fff;
+    margin: 35px;
+}
+
+.menu {
+    z-index: 4;}
+
+.firstMenu .nav-link:focus, .firstMenu  .nav-link:hover {
+    color: #fff;
+    background: #2fa27b;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.firstMenu .nav-link, .firstMenu .nav-link {
+    color: #fff!important;
+    border-radius: 20px!important;
+    padding: 8px 20px!important;
+}
+
+.demo {
+    background: #0082a8;
+    border-radius: 20px;
+    padding: 0px 14px;
+}
+
+.demo a{
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.secondMenu li:first-child{
+    border-right: #fff solid 1px;
+}
+.nav-link {
+    display: block;
+    padding: 0.1rem 0rem;
+}
+
+
+
+
+
+
+
+/* contenido */
+
+.noticas{
+    background: url(../img/bk2.jpg) repeat-x #fff;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.contact{
+    background: #005068;
+    align-items: center;
+    display: flex;
+    padding: 2em 2em;
+}
+
+
+footer h2 {
+    font-size: 3.1em;
+    font-weight: 700;
+}
+
+
+
+footer ul {
+    display: flex;
+    padding-left: 0px;
+    margin : 30px 0;
+}
+
+footer ul li:first-child {
+    padding-left: 0;
+    border-left: 0px;
+}
+
+footer ul li{
+    list-style: none;
+    flex-direction: row;
+    padding: 0px 30px;
+    border-left: 1px solid #EBEBEB;
+}
+
+.link-footer{
+    margin-bottom: 1px solid #EBEBEB;
+}
+
+.tn{
+    margin : 30px 0;
+}
+
+.icons a {
+    padding: 6px 8px;
+    border-radius: 20px;
+    border: 2px solid #50e3c2;
+    margin: 4px;
+    color: #50e3c2;
+}
+
+.icons{
+    margin-top: 20px;
+}
