@@ -295,7 +295,7 @@ background-blend-mode: multiply;
 
 
 footer h2 {
-    font-size: 3.1em;
+    font-size: 3em;
     font-weight: 700;
 }
 
@@ -341,4 +341,41 @@ footer ul li{
 
 
 
+
+/* Mobile */
+
+@media screen and (max-width: 600px){
+
+[data-thmb="prev"], [data-thmb="next"]  {
+    padding: 25px 25px;
+    background-size: contain;
+    z-index: 50;
+}
+
+.controlBtn {
+    width: 92%;
+    bottom: -110px;
+}
+
+footer ul li {
+    padding: 0px 15px;
+}
+
+.menu {
+    background: #005067;
+}
+.carousel {
+    top: inherit;
+}
+.noPadding{
+    padding: 0;
+}
+.fontEx1::after {
+    margin-left: 160px;
+}
+.txtR {
+    margin: 40px 10px 40px 20px;
+}
+
+}
 

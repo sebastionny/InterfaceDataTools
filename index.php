@@ -17,7 +17,7 @@
 <header>
 
     <!-- navegacion -->
-    <div class="container ">
+    <div class="container noPadding">
         <div class="menu">
         <nav class="navbar navbar-dark navbar-expand-md justify-content-center fontParrafo">
             <a class="navbar-brand d-flex w-25 mr-auto" href="#"><img src="./img/datatools-trans.png" alt="Data Tools"></a>
@@ -102,16 +102,15 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <img src="./img/img-message.jpg" alt="Message ">
+            <div class="col-sm-4 order-md-first order-last">
+                <img class="img-fluid" src="./img/img-message.jpg" alt="Message ">
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 order-md-last order-first">
                 <div class="fontEx2 txtR">existimos para</div>
                 <h1 class="fontEx1 fontTitulo colorV3">Mejorar la experiencia de los ciudadanos al movilizarse por su ciudad</h1>
                 <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-3"><img src="./img/logoData.png" class="img-fluid" alt="Logo"></div>
-                    <div class="col-7 fontParrafo txtR">
+                    <div class="col-md-3 col-sm-12 text-center"><img src="./img/logoData.png" class="img-fluid" alt="Logo"></div>
+                    <div class="col-md-7 col-sm-12 fontParrafo txtR">
                         En DataTools solucionamos problemas de movilidad con el apoyo de tecnologías de punta, la inteligencia artificial, la ciencia de los datos.
                         <h4>Mauricio Morales CEO</h4>
                     </div>
@@ -129,7 +128,7 @@
     <div class="container">
         <div class="row pt-5">
             <div class="col-sm-9">
-                <h2 class="fontTitulo colorV3 mb-3">Noticias</h2>
+                <h2 class="fontTitulo colorV3 mb-3 mt-5">Noticias</h2>
                 <div class="row mt-5">
 
                 <?php for ($i=0; $i < 4; $i++) { ?>
@@ -154,7 +153,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <h2 class="fontTitulo colorV3 mb-3">Testimonios</h2>
+                <h2 class="fontTitulo colorV3 mb-3 mt-5">Testimonios</h2>
 
                 <div class="testimons mb-5">
                     <?php for ($i=0; $i < 3; $i++) { ?>
@@ -196,17 +195,17 @@
     <footer class="container mt-5">
 
 <div class="row mb-2 fontParrafo">
-    <div class="col-sm-3">
+    <div class="col-sm-3 text-center pb-2">
         <img class="img-fluid" src="./img/logoData.png" alt="Data Tools">
     </div>
     <div class="col-sm-9 contact colorB">
         <div class="row">
-            <div class="col-7">
+            <div class="col-md-7 col-sm-12">
                 <h5 class="colorV1">Llámenos</h5>
                 <h2>(325) 456 3456</h2>
                 <a class="linkA" href="mailto:info@datatools.com">info@datatools.com</a>
             </div>
-            <div class="col-5 font-weight-bolder">
+            <div class="col-md-5 col-sm-12 font-weight-bolder">
                 <div> 2325 Rue de la Vie-Étudiante, La Centrale - espace entrepreneurial. </div>
                 <span class="font-weight-lighter">Bogotá, Colombia </span>
                 <div class="icons">
