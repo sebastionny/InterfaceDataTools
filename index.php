@@ -17,7 +17,7 @@
 <header>
 
     <!-- navegacion -->
-    <div class="container noPadding">
+    <div class="container noPadding menuBK">
         <div class="menu">
         <nav class="navbar navbar-dark navbar-expand-md justify-content-center fontParrafo">
             <a class="navbar-brand d-flex w-25 mr-auto" href="#"><img src="./img/datatools-trans.png" alt="Data Tools"></a>
@@ -55,12 +55,12 @@
 
 
 <!-- Slider -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide displayNotMobile" data-ride="carousel">
     
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="./img/modele3-t.jpg" alt="1 slide">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption  d-md-block">
                     <h2 class="fontTitulo colorB">Soluciones tecnológicas</h2>
                     <h4 class="fontSubtitulo colorB">a la mano de todos los ciudadanos</h4>
                     <img src="./img/logoDTBlanco.png" alt="Data Tools">
@@ -68,7 +68,7 @@
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="./img/modele-t.jpg" alt="2 slide">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-md-block">
                     <h2 class="fontTitulo colorB">Soluciones tecnológicas</h2>
                     <h4 class="fontSubtitulo colorB">a la mano de todos los ciudadanos</h4>
                     <img src="./img/logoDTBlanco.png" alt="Data Tools">
@@ -81,7 +81,7 @@
 
 </header>
 <!-- Control Slider -->
-    <div class="container" style="position: relative; top: -80px;" >
+    <div class="container displayNotMobile" style="position: relative; top: -80px;" >
         <div class="controlBtn ">
             <a href="#carouselExampleControls" role="button" data-slide="prev">
                 <div class="clip-mask2" data-thmb="prev" >

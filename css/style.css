@@ -339,12 +339,15 @@ footer ul li{
     margin-top: 20px;
 }
 
+.displayNotMobile{
+    display: block;
+}
 
 
 
 /* Mobile */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 
 [data-thmb="prev"], [data-thmb="next"]  {
     padding: 25px 25px;
@@ -361,8 +364,9 @@ footer ul li {
     padding: 0px 15px;
 }
 
-.menu {
-    background: #005067;
+.menu, .menuBK {
+    background: #005067!important;
+    max-width: 100%;
 }
 .carousel {
     top: inherit;
@@ -377,5 +381,11 @@ footer ul li {
     margin: 40px 10px 40px 20px;
 }
 
+}
+
+@media screen and (max-width: 500px){
+    .displayNotMobile{
+        display: none;
+    }
 }
 
